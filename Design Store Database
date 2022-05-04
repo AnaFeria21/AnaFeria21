@@ -1,0 +1,22 @@
+Create Table ANASTORE (ID integer primary key, Product_Type TEXT, Price Integer, material Text, Sold Integer);
+
+Insert into Anastore values (1, "Sweater", 10, "Cotton", 100); 
+Insert into Anastore values (2, "T-shirt", 5, "Cotton", 200); 
+Insert into Anastore values (3, "Trousers", 20, "Linen", 150); 
+Insert into Anastore values (4, "Shirt", 20, "Silk", 300); 
+Insert into Anastore values (5, "Hoodie", 50, "Poliester", 75); 
+Insert into Anastore values (6, "Top", 40, "Wool", 65); 
+Insert into Anastore values (7, "Jacket", 100, "Cotton", 30); 
+Insert into Anastore values (8, "Cape", 35, "Wool", 23); 
+Insert into Anastore values (9, "Socks", 3, "Cotton", 500); 
+Insert into Anastore values (10, "Pyjama", 15, "Linen", 64); 
+Insert into Anastore values (11, "Shorts", 67, "Cotton", 35); 
+Insert into Anastore values (12, "Leggings", 8, "Cotton", 200); 
+Insert into Anastore values (13, "Underwear", 6, "Cotton", 145); 
+Insert into Anastore values (14, "Shoes", 15, "Leather", 57); 
+Insert into Anastore values (15, "Scarf", 12, "silk", 67); 
+
+Select * from ANASTORE order by price;
+Select max(sold) from Anastore;
+Select sum(sold) from Anastore group by material; 
+select material, sum(sold) from ANASTORE group by material; 
